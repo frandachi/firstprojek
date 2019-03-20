@@ -1,0 +1,73 @@
+<style type='text/css'>
+/*CSS Nav*/
+.navmenu {
+  width: 100%;
+  margin: 0px auto;
+  display: block;
+  position: relative;
+  background-color: #1C90F3;
+}
+
+nav.navmenu ul {
+  list-style: none;
+  position: relative;
+  width: 80%;
+  box-sizing: border-box;
+  background: #1C90F3;
+  margin: 0px auto;
+  padding: 0px;
+}
+
+nav.navmenu li {
+  display: inline-block;
+  position: relative
+}
+
+nav.navmenu li a {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #FFF;
+  display: block;
+  box-sizing: border-box;
+}
+
+nav.navmenu li a:hover {
+  background-color: #1789EA
+}
+  
+/*CSS DROPDOWN*/
+nav.navmenu li.submenu ul.dropdown {
+  display: none;
+  padding: 0px;
+  position: absolute;
+}
+
+nav.navmenu li.submenu:hover ul.dropdown {
+  display: block;
+  z-index:9
+}
+
+nav.navmenu li.submenu ul.dropdown li {
+  display: block;
+  width: 200px;
+  background: #1C90F3
+}
+
+</style>
+
+
+<nav class='navmenu'>
+  <ul>
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Menu1</a></li>
+  <li class='submenu'><a href="#NOLINK">Dropdown</a>
+  <ul class='dropdown'>
+  <li><a href="#">Dropdown 1</a></li>
+  <li><a href="#">Dropdown 2</a></li>
+  <li><a href="#">Dropdown 3</a></li>
+  </ul>
+  </li>
+  <li><a href="#">Menu2</a></li>
+  <li><a href="#">Menu3</a></li>
+  </ul>
+</nav>
